@@ -22,14 +22,14 @@ public class JavaSwingLogin implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         String name = nameTxt.getText();
         String pass = passTxt.getText();
-//        System.out.println(name + " " + pass);
         
+        //check textboxes for correct login
         if(name.equals("alex") && pass.equals("fluffy"))
         {
-            success.setText("Login successfull!");
+            success.setText("Login Successfull!");
         }
         else {
-            success.setText("");
+            success.setText("Invalid Login.");
         }
     }
 
